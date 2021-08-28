@@ -1,0 +1,88 @@
+<html><head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=icon href='Saikat Sen.png'>
+   
+    <title>NoteBook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+ 
+ textarea.hidden{color:white;}
+ textarea{font-size: 25px;color: black;}
+ .main{font-size: 25px;}
+   body{
+    max-width:1400px;
+    margin:5px auto;font-family:'Times New Roman', Times, serif;
+    background: linear-gradient(rgb(128, 87, 0),rgb(99, 16, 155));
+    background-repeat: no-repeat;
+    background-position: center;
+   }
+#head{background:linear-gradient(20deg,rgb(208, 255, 0),rgb(0, 255, 76));color:rgb(77, 76, 75);
+padding:15px;margin-bottom: 15px;
+border-radius:6px 6px;margin-left:10px;
+margin-right: 10px;
+position:relative;
+}
+.fa.fa-book{margin-left:3px;color:purple;}
+#side{float:right;position:relative;
+right:55px;top:20px;
+border-radius:35px 35px;
+
+}
+.note{display: inline-block;
+    position: absolute;
+   max-height: max-content;
+    max-width: max-content;background: white;
+    margin-top:80px;
+    
+    text-align: center;
+  
+}
+textarea{min-width: 250px;overflow-x: hidden;
+   min-width:260px;
+   max-width: 100%;
+   min-height: 130px;}
+.operation{float:right;margin-top: -40px;}
+.edit{font-size: 35px;background: rgb(245, 245, 241);color:green;}
+.delete{font-size:35px;background:rgb(255, 255, 251);color:red;}
+#btn{text-decoration: none;
+    background-color: beige;color:red;
+font-size: 22px;
+padding:5px 5px;
+border-radius: 35px 35px;
+padding:7px 7px;position:relative;
+border-radius: 35px 35px;
+
+}
+.main{background-color: cornflowerblue;color:cornsilk;}
+.edit:hover{background: rgb(243, 239, 243);}
+.delete:hover{background: rgb(245, 240, 245);}
+.note{padding-top:50px;text-align: center;position:relative;display:inline-block;
+margin-left:20px;}
+
+
+#head:hover{cursor: pointer;}
+#btn:hover{transform:scale(0.8);background-color: rgb(179, 170, 182);
+cursor: pointer;color:#ffd700;
+}
+@media(max-width:550px) {#side{right:10px;top:0px;}
+.note{
+    display:flex;
+flex-direction: column;}
+textarea{min-width: 260px;
+max-width: 100%;}
+.operation{float: right;}
+
+
+}
+</style>
+<body>
+<header id='head'>
+<h2 class='tag'><i class='fa fa-book'></i>NoteBook</h3>
+</header>
+<div id='side'>
+    <input type=button id='btn' value='Add Note'></button>
+</div>
+<script type='text/javascript' src='notebook.js'></script>
+</body>
+</html>
